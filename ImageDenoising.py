@@ -23,7 +23,7 @@ class ImageDenoising():
 		mask = np.array([[1, 1, 1], [1, 1, 1], [1, 1, 1]])
 		filt = cv2.filter2D(img, ddepth = -1, kernel = mask)
 
-		clear = np.where(abs(8 * img - filt) < e, img, filt / 8)
+		clear = np.where(abs(9 * img - filt) < e, img, filt / 9)
 		return clear
 
 	def Median(self, n = 3):
