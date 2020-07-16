@@ -93,5 +93,5 @@ if __name__ == "__main__":
 
 		morphological = Morphological(img)
 		for method in methods:
-			clear = getattr(morphological, method)()
-			cv2.imwrite("{}/{}.jpg".format(args.output, method), clear)
+			morph = getattr(morphological, method)()
+			cv2.imwrite("{}/{}.jpg".format(args.output, method), morph)
