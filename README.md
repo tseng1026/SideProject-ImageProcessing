@@ -33,8 +33,7 @@
 
 - **Hough Transform**
   - This procedure is usually implemented after edge detection to detect lines; hough transformation can tolerate gaps in the edges and is relatively unaffected by noise.
-  - A more useful representation for line in hough transformation is 
-  - <img src="https://render.githubusercontent.com/render/math?math=\rho = x\cos\theta %2B y\sin\theta">
+  - A more useful representation for line in hough transformation is <img src="https://render.githubusercontent.com/render/math?math=\rho = x\cos\theta %2B y\sin\theta">.
   - The concept is to vote for the parameters permutation and select the terms with the votes greater than the threshold.
 
 - **Morphological Processing**
